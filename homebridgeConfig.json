@@ -1,0 +1,199 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "0E:95:37:75:BA:5A",
+        "port": 51826,
+        "pin": "416-97-986"
+    },
+    "accessories": [
+        {
+            "accessory": "Http",
+            "name": "Licht Stall 1",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_coop1/setH",
+            "off_url": "http://192.168.178.22/l_coop1/setL",
+            "status_url": "http://192.168.178.22/l_coop1/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Licht Stall 2",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_coop2/setH",
+            "off_url": "http://192.168.178.22/l_coop2/setL",
+            "status_url": "http://192.168.178.22/l_coop2/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Licht Dachboden",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_ceiling/setH",
+            "off_url": "http://192.168.178.22/l_ceiling/setL",
+            "status_url": "http://192.168.178.22/l_ceiling/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Licht Kammer",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_storage/setH",
+            "off_url": "http://192.168.178.22/l_storage/setL",
+            "status_url": "http://192.168.178.22/l_storage/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Stall Flutlicht",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_flood/setH",
+            "off_url": "http://192.168.178.22/l_flood/setL",
+            "status_url": "http://192.168.178.22/l_flood/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Gartentor Flutlicht",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/l_entrance/setH",
+            "off_url": "http://192.168.178.22/l_entrance/setL",
+            "status_url": "http://192.168.178.22/l_entrance/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Light"
+        },
+        {
+            "accessory": "Http",
+            "name": "Innensteckdosen",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/olt_indoor/setH",
+            "off_url": "http://192.168.178.22/olt_indoor/setL",
+            "status_url": "http://192.168.178.22/olt_indoor/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Aussensteckdosen",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/olt_outdoor/setH",
+            "off_url": "http://192.168.178.22/olt_outdoor/setL",
+            "status_url": "http://192.168.178.22/olt_outdoor/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Teichsteckdose",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/olt_puddle/setH",
+            "off_url": "http://192.168.178.22/olt_puddle/setL",
+            "status_url": "http://192.168.178.22/olt_puddle/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Weidezaun",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/fence/setH",
+            "off_url": "http://192.168.178.22/fence/setL",
+            "status_url": "http://192.168.178.22/fence/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Lüfter",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/fan/setH",
+            "off_url": "http://192.168.178.22/fan/setL",
+            "status_url": "http://192.168.178.22/fan/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Pumpe",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/pump/setH",
+            "off_url": "http://192.168.178.22/pump/setL",
+            "status_url": "http://192.168.178.22/pump/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "Http",
+            "name": "Hochdruckreiniger",
+            "switchHandling": "yes",
+            "http_method": "GET",
+            "on_url": "http://192.168.178.22/kaercher/setH",
+            "off_url": "http://192.168.178.22/kaercher/setL",
+            "status_url": "http://192.168.178.22/kaercher/poll",
+            "status_on": "1",
+            "status_off": "0",
+            "service": "Switch"
+        },
+        {
+            "accessory": "GarageDoorOpenerV2",
+            "name": "Klappe 1",
+            "openURL": "http://192.168.178.22/klappe1/open",
+            "closeURL": "http://192.168.178.22/klappe1/close",
+            "statusURL": "http://192.168.178.22/klappe1/poll",
+            "polling": "true",
+            "timeout": "10",
+            "pollInterval": "20",
+            "openTime": "12",
+            "closeTime": "10",
+            "manufacturer": "Wimbauer Engineering"
+        },
+        {
+            "accessory": "GarageDoorOpenerV2",
+            "name": "Klappe 2",
+            "openURL": "http://192.168.178.22/klappe2/open",
+            "closeURL": "http://192.168.178.22/klappe2/close",
+            "statusURL": "http://192.168.178.22/klappe2/poll",
+            "polling": "true",
+            "timeout": "10",
+            "pollInterval": "20",
+            "openTime": "12",
+            "closeTime": "10",
+            "manufacturer": "Wimbauer Engineering"
+        }
+    ],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "platform": "config"
+        }
+    ]
+}
